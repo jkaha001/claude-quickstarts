@@ -11,8 +11,27 @@
 <<<<<<< HEAD
     "@anthropic-ai/sdk": "^1.0.0",
 =======
+<<<<<<< Updated upstream
     "@anthropic-ai/sdk": ">=0.129.0 <1.0.0",
 >>>>>>> b9ae86e (Update JavaScript SDK to 0.129.0 (#506))
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+    "@anthropic-ai/sdk": ">=0.129.0 <1.0.0",
+=======
+    "@anthropic-ai/sdk": "^1.0.0",
+>>>>>>> upstream/main
+>>>>>>> eabccd0 (Run the quickstarts on current SDK and model releases (#506))
+=======
+    "@anthropic-ai/sdk": ">=0.129.0 <1.0.0",
+>>>>>>> b9ae86e (Update JavaScript SDK to 0.129.0 (#506))
+>>>>>>> Stashed changes
+=======
+    "@anthropic-ai/sdk": ">=0.129.0 <1.0.0",
+>>>>>>> b9ae86e (Update JavaScript SDK to 0.129.0 (#506))
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     "@cloudflare/containers": "^0.0.28",
     "minimatch": "^9.0.5"
   },

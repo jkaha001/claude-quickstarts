@@ -32,9 +32,33 @@ import { Sandbox } from "@vercel/sandbox";
 // function's own dependency, so handleItem()'s surface matches.
 const SDK_VERSION = "^1.0.0";
 =======
+<<<<<<< Updated upstream
 // handleItem() has accepted the per-session work secret since 0.124.0.
 const SDK_VERSION = ">=0.129.0 <1.0.0";
 >>>>>>> b9ae86e (Update JavaScript SDK to 0.129.0 (#506))
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+// handleItem() has accepted the per-session work secret since 0.124.0.
+const SDK_VERSION = ">=0.129.0 <1.0.0";
+=======
+// The SDK range the in-sandbox runner installs: the same major as this
+// function's own dependency, so handleItem()'s surface matches.
+const SDK_VERSION = "^1.0.0";
+>>>>>>> upstream/main
+>>>>>>> eabccd0 (Run the quickstarts on current SDK and model releases (#506))
+=======
+// handleItem() has accepted the per-session work secret since 0.124.0.
+const SDK_VERSION = ">=0.129.0 <1.0.0";
+>>>>>>> b9ae86e (Update JavaScript SDK to 0.129.0 (#506))
+>>>>>>> Stashed changes
+=======
+// handleItem() has accepted the per-session work secret since 0.124.0.
+const SDK_VERSION = ">=0.129.0 <1.0.0";
+>>>>>>> b9ae86e (Update JavaScript SDK to 0.129.0 (#506))
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 const SANDBOX_TIMEOUT_MS = 30 * 60 * 1000;
 const MAX_DRAIN = 25;
 // Anthropic's deliveries are a few hundred bytes. The cap bounds the work an
