@@ -1,7 +1,6 @@
 """Agent implementation with Claude API and tools."""
 
 import asyncio
-import os
 from contextlib import AsyncExitStack
 from dataclasses import dataclass
 from typing import Any
@@ -19,14 +18,11 @@ class ModelConfig:
     """Configuration settings for Claude model parameters."""
 
     # Available models include:
-    # - claude-sonnet-4-20250514 (default)
-    # - claude-opus-4-20250514
+    # - claude-sonnet-5-5 (default)
+    # - claude-opus-5-5
     # - claude-haiku-4-5-20251001
-    # - claude-3-5-sonnet-20240620
-    # - claude-3-haiku-20240307
-    model: str = "claude-sonnet-4-20250514"
+    model: str = "claude-sonnet-5-5"
     max_tokens: int = 4096
-    temperature: float = 1.0
     context_window_tokens: int = 180000
 
 
@@ -64,9 +60,10 @@ class Agent:
         self.config = config or ModelConfig()
         self.mcp_servers = mcp_servers or []
         self.message_params = message_params or {}
-        self.client = client or Anthropic(
-            api_key=os.environ.get("ANTHROPIC_API_KEY", "")
-        )
+        # Anthropic() finds its credential itself (ANTHROPIC_API_KEY,
+        # ANTHROPIC_AUTH_TOKEN, or an `ant auth login` profile); with none
+        # set, the first request raises "Could not resolve authentication".
+        self.client = client or Anthropic()
         self.history = MessageHistory(
             model=self.config.model,
             system=self.system,
@@ -86,7 +83,6 @@ class Agent:
         return {
             "model": self.config.model,
             "max_tokens": self.config.max_tokens,
-            "temperature": self.config.temperature,
             "system": self.system,
             "messages": self.history.format_for_api(),
             "tools": [tool.to_dict() for tool in self.tools],

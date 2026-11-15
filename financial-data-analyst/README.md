@@ -6,7 +6,7 @@ A sophisticated Next.js application that combines Claude's capabilities with int
 
 ## Features
 
-- **Intelligent Data Analysis**: Powered by Claude (Using Claude 3 Haiku & Claude 3.5 Sonnet)
+- **Intelligent Data Analysis**: Powered by Claude (Using Claude Haiku 4.5 & Claude Sonnet 5.5)
 - **Multi-Format File Upload Support**:
   - Text/Code files (.txt, .md, .html, .py, .csv, etc)
   - PDF documents (Regular PDF with text, scanned documents not supported)
@@ -23,7 +23,7 @@ A sophisticated Next.js application that combines Claude's capabilities with int
 
 ### Prerequisites
 
-- Node.js 18+ installed
+- Node.js 20+ installed (required by `@anthropic-ai/sdk` v1)
 - Claude API key (For Claude integration)
 
 ### Installation
@@ -64,7 +64,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - **Backend**:
   - Next.js API Routes
   - Edge Runtime
-  - Anthropic SDK
+  - Anthropic TypeScript SDK (`@anthropic-ai/sdk` v1.x)
 
 ## Usage Examples
 
