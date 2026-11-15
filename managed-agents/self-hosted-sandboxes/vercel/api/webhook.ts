@@ -27,9 +27,14 @@ import { fileURLToPath } from "node:url";
 import Anthropic from "@anthropic-ai/sdk";
 import { Sandbox } from "@vercel/sandbox";
 
+<<<<<<< HEAD
 // The SDK range the in-sandbox runner installs: the same major as this
 // function's own dependency, so handleItem()'s surface matches.
 const SDK_VERSION = "^1.0.0";
+=======
+// handleItem() has accepted the per-session work secret since 0.124.0.
+const SDK_VERSION = ">=0.129.0 <1.0.0";
+>>>>>>> b9ae86e (Update JavaScript SDK to 0.129.0 (#506))
 const SANDBOX_TIMEOUT_MS = 30 * 60 * 1000;
 const MAX_DRAIN = 25;
 // Anthropic's deliveries are a few hundred bytes. The cap bounds the work an
