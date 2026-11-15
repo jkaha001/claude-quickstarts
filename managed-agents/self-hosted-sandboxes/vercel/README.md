@@ -145,6 +145,7 @@ Both the function and the in-sandbox `npm install` use
 `@anthropic-ai/sdk ^1.0.0`, so the worker API inside the sandbox matches the
 one the function was built against.
 =======
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 `@anthropic-ai/sdk >=0.129.0 <1.0.0`. `handleItem()` has accepted the
 per-session work secret since 0.124.0.
@@ -153,6 +154,11 @@ per-session work secret since 0.124.0.
 one the function was built against.
 >>>>>>> upstream/main
 >>>>>>> eabccd0 (Run the quickstarts on current SDK and model releases (#506))
+=======
+`@anthropic-ai/sdk >=0.129.0 <1.0.0`. `handleItem()` has accepted the
+per-session work secret since 0.124.0.
+>>>>>>> b9ae86e (Update JavaScript SDK to 0.129.0 (#506))
+>>>>>>> Stashed changes
 
 - `Sandbox.create()`, `writeFiles()`, and `npm install` take 15 to 25 seconds
   before the function responds. The runner itself is detached. To cut about
