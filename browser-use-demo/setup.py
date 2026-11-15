@@ -7,7 +7,19 @@ setup(
     python_requires=">=3.11",
     install_requires=[
         "streamlit==1.41.0",
+<<<<<<< Updated upstream
         "anthropic[bedrock,vertex]>=0.39.0",
+=======
+<<<<<<< HEAD
+        "anthropic[bedrock,vertex]>=2.0.0,<3",
+=======
+<<<<<<< HEAD
+        "anthropic[bedrock,vertex]>=1.9.0,<2.0.0",
+=======
+        "anthropic[bedrock,vertex]>=2.0.0,<3",
+>>>>>>> upstream/main
+>>>>>>> eabccd0 (Run the quickstarts on current SDK and model releases (#506))
+>>>>>>> Stashed changes
         "jsonschema==4.22.0",
         "boto3>=1.28.57",
         "google-auth<3,>=2",
